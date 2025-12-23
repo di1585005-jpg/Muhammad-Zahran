@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV - Professional Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .cv-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 40px 0;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            color: #4facfe;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0f0f0;
+        }
+        
+        .contact-item, .skill-item, .education-item, .experience-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-item i {
+            margin-right: 10px;
+            color: #4facfe;
+            min-width: 20px;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 4px;
+        }
+        
+        .education-item h4, .experience-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .education-item p, .experience-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .experience-item {
+            border-left: 3px solid #4facfe;
+            padding-left: 15px;
+        }
+        
+        .btn-download {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-download:hover {
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cv-container">
+            <div class="header">
+                <div class="profile-img">
+                    <img src="https://bpm.umsu.ac.id/wp-content/uploads/2022/12/admin.png" alt="Muhammad Zahran Al-thoriq">
+                </div>
+                <h1 class="name">Muhammad Zahran Al-thoriq</h1>
+                <p class="title">Frontend Developer & UI/UX Designer</p>
+                <button class="btn-download">
+                    <i class="fas fa-download"></i> Download CV
+                </button>
+            </div>
+            
+            <div class="content">
+                <div class="sidebar">
+                    <div class="section">
+                        <h3 class="section-title">Contact</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>muhammadzahranalthoriq@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 812-6263-9518</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kabanjahe, Indonesia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">Skills</h3>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <div>
+                                <span>HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <div>
+                                <span>CSS3 & Tailwind</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <div>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <div>
+                                <span>React.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <div>
+                                <span>UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main-content">
+                    <div class="section">
+                        <h3 class="section-title">About Me</h3>
+                        <p>
+                            I am a passionate Frontend Developer currently pursuing a degree in Information Systems. 
+                            I have a strong foundation in web development technologies and a keen eye for user interface design. 
+                            I am always eager to learn new technologies and create engaging, user-friendly web applications.
+                        </p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">Education</h3>
+                        <div class="education-item">
+                            <h4>Information Systems</h4>
+                            <p>Muhammadiyah University of North Sumatera</p>
+                            <p>Expected Graduation: 2026</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>Senior High School 2 Kabanjahe</h4>
+                            <p>2020 - 2023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">Work Experience</h3>
+                        <div class="experience-item">
+                            <h4>Web Development Intern</h4>
+                            <p><strong>Local Tech Startup</strong> | Jun 2023 - Aug 2023</p>
+                            <p>Assisted in developing and maintaining company websites using modern frontend technologies.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Freelance Web Developer</h4>
+                            <p><strong>Self-Employed</strong> | 2022 - Present</p>
+                            <p>Create responsive websites for small businesses and personal portfolios using HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Muhammad Zahran Al-thoriq. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.btn-download').addEventListener('click', function() {
+            alert('CV download feature will be available in the full version!');
+        });
+    </script>
+</body>
+</html>
+
